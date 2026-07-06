@@ -3,41 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIP - Kaskazini Betting</title>
-    <link rel="stylesheet" href="style.css">
+    <title>VIP - King 👑 Jooh</title>
 </head>
-<body>
+<body style="font-family:Arial;text-align:center;padding:40px;">
 
-<header>
-    <h1>💎 KASKAZINI BETTING VIP 💎</h1>
-    <p>Karibu kwenye ukurasa wa wanachama wa VIP.</p>
-</header>
+<h2>🔒 King 👑 Jooh VIP</h2>
 
-<nav>
-    <a href="index.html">Nyumbani</a>
-    <a href="vip.html">VIP</a>
-</nav>
+<p>Ingiza password ili kuona VIP Tips</p>
 
-<section class="hero">
+<input type="password" id="password" placeholder="Weka Password">
+<br><br>
 
-<h2>Jiunge na VIP</h2>
+<button onclick="funguaVIP()">Ingia</button>
 
-<div class="card">
-    <h3>Faida za VIP</h3>
-
-    <p>✅ Tips za kila siku</p>
-    <p>✅ Odds kubwa</p>
-    <p>✅ Uchambuzi wa kitaalamu</p>
-    <p>✅ Msaada kwa wanachama</p>
-
-    <button>JIUNGE SASA</button>
+<div id="vip" style="display:none; margin-top:30px;">
+    <h3>✅ Karibu VIP</h3>
+    <p>Hapa ndipo utaweka mechi zako za VIP.</p>
 </div>
 
-</section>
+<script>
+function funguaVIP() {
+    var password = document.getElementById("password").value;
 
-<footer>
-<p>© 2026 Kaskazini Betting</p>
-</footer>
+    if(password === "Mabasi154") {
+        document.getElementById("vip").style.display = "block";
+    } else {
+        alert("❌ Password si sahihi.");
+    }
+}
+</script>
 
 </body>
 </html>
